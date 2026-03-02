@@ -3,3 +3,44 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 32px;
+  background-color: black;
+}
+
+.navbar-title,
+.navbar-links > li > a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navbar-title {
+  font-size: 2.4rem;
+}
+
+.navbar-title:hover,
+.navbar-links > li > a:hover {
+  text-decoration: underline;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 32px;
+} 
+
+@media (max-width: 840px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+  }
+}
