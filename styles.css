@@ -33,7 +33,24 @@
 .navbar-links {
   display: flex;
   gap: 32px;
-} 
+}
+
+.homepage {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage > div {
+  padding: 32px;
+  background-color: skyblue;
+  color: rgb(32, 32, 32);
+  text-align: center;
+  border-radius: 10px;
+}
 
 @media (max-width: 840px) {
   .navbar-container {
